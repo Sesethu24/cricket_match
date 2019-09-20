@@ -11,14 +11,6 @@ describe('cricket_match', function(){
       assert.deepEqual(7, match.getCurrentScore());
      });
 
-
-   //   it('should return the right score for 2 overs', function(){
-
-   //   match.extractScore( "12345-");
-   //   match.extractScore( "1-w---");
-   //   assert.deepEqual(16, match.getCurrentScore());
-
-   //   });
      it('should return true if theres wickets available ', function(){
 
         
