@@ -7,49 +7,32 @@ describe('cricket_match', function(){
 
      it('should return the right score for an over', function(){
 
-        let overs = ["--6-1w"]
-
-        for (let i = 0; i < overs.length; i++) {
-            var over = overs[i];
-            match.extractScore(over);
-     }
-
-        assert.deepEqual(7, match.getCurrentScore());
+      match.extractScore("--6-1w");
+      assert.deepEqual(7, match.getCurrentScore());
      });
 
 
-     it('should return the right score for 2 overs', function(){
+   //   it('should return the right score for 2 overs', function(){
 
-        let overs = ["--6-1w","12345-"]
+   //   match.extractScore( "12345-");
+   //   match.extractScore( "1-w---");
+   //   assert.deepEqual(16, match.getCurrentScore());
 
-        for (let i = 0; i < overs.length; i++) {
-            var over = overs[i];
-            match.extractScore(over);
-     }
-
-        assert.deepEqual(29, match.getCurrentScore());
-
-     });
+   //   });
      it('should return true if theres wickets available ', function(){
 
-        let overs = ["wwwwww"]
-
-        for (let i = 0; i < overs.length; i++) {
-            var over = overs[i];
-            match.extractScore(over);
-     }
+        
+            match.extractScore("wwwwww");
+     
 
         assert.deepEqual(true, match.checkWickets());
 
      });
      it('should return the right total for available wickets ', function(){
 
-        let wicket = ["w"]
-
-        for (let i = 0; i < wicket.length; i++) {
-            var over = wicket[i];
-            match.remainingWickets(over);
-     }
+        
+            match.remainingWickets("w");
+     
        assert.deepEqual(1, match.checkWickets());
 
      });

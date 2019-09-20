@@ -29,11 +29,9 @@ app.get('/', function (req, res) {
         });
 })
 app.post('/action', function (req, res) {
-
-    theMatch.extractScore({ total: req.body.total
-    
-    })
-   res.redirect('/')
+ 
+theMatch.extractScore( req.body.x)
+ res.redirect('/')
 });
 
 let PORT = process.env.PORT || 3010;
