@@ -4,7 +4,7 @@ module.exports = function cricket_match() {
     let currentScore = 0;
 
     function extractScore(over) {
-      console.log({overs})
+     
       var overs = over.split('')
       
       for (let i = 0; i < overs.length; i++) {
