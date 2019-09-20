@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "test": "test",
+    "test": "test"
     
   },
   "scripts": {
     "test": "mocha",
-    "mocha": ".node_modules/bin/mocha",
-    "start": "node index.js"
+    "start": "node index.js",
+    "mocha": ".node_modules/bin/mocha"
   },
   "keywords": [],
   "author": "",
